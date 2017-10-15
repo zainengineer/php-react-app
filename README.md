@@ -36,3 +36,18 @@
   * link to bundle css `static/css/main.css`) 
     * in dev mode style tag is dynamically generated and injected in document (may be for easy hot-reloading). 
     * But production config uses `ExtractTextPlugin` with fallback to `style-loader` so unlike dev html static html needs link tag to html
+
+### How did I use redux
+
+    npm i redux --save
+    npm i react-redux --save
+    cd src && mkdir actions components reducers && touch store.js
+* Above bundling example was taken from:
+    * `http://www.penta-code.com/how-to-add-redux-to-create-react-app/`
+    * As it modified `create-react-app`
+* Used app logic example from official docs 
+  * url: `http://redux.js.org/docs/introduction/Examples.html`
+  * sample: https://codesandbox.io/s/github/reactjs/redux/tree/master/examples/counter
+  * but modified to fit into default create react app
+  * key difference is to make component of Store `src/components/Store.js` and make it part of global App.
+  
