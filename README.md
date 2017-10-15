@@ -1,4 +1,15 @@
-#  React JS with normal PHP app
+##  React JS boiler plate with normal PHP app
+
+### How to use this boiler plate
+
+* In apache create a vhost pointing to `php` folder as root. Choose a domain (lets say `example.com`) 
+* For other web servers use similar approach and point web server document root to `php` folder
+* Install `yarn`
+* In repository root folder (not webroot) execute `yarn build`
+* In your browser open `react.php` (lets say `http://example.com/react.php`
+* It should display react page.
+
+### How I created this app
 
 * create app using create react app
   * https://github.com/facebookincubator/create-react-app
